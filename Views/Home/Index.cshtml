@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+ 
+
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>to Dennica's FizzBuzz program</p>
+
+    
+    @{
+        int maxNum= 100;
+
+        for(int x=1;x<=maxNum;x++) //loops through each number
+        {
+            if (x%3==0 && x%5!=0)    //checks if number is only a multiple of 3
+            {
+                <p> Fizz</p>
+
+            }
+            else if(x%5==0 && x%3!=0)      //checks if number is only a multiple of 5
+               {
+                     <p>@x  Buzz</p>
+
+                }
+            else if (x%5==0 && x%3==0)   //check if number is a multiple of both 3 and 5
+                    {
+                         <p>FizzBuzz</p>
+                     }
+            else
+                  {
+                       <p>@x</p>
+
+                     }
+
+
+    }
+   }
+
+
+
+</div>
